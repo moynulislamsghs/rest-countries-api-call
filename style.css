@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.countries{
+    max-width: 1240px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.element_div{
+    background-color: aquamarine;
+    border: 1px solid burlywood;
+    padding: 15px;
+}
+img{
+    width: 100%;
+    height: 150px;
+}
+
+
+@media screen and (max-width: 768px){
+    .countries{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:480px){
+    .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
